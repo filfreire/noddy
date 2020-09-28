@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+container_version=latest
+container_name=noddy
+
+COMMAND="$1"
+
+function usage(){
+    echo """
+Usage:	noddy ACTION
+
+Action Commands :
+  run | start | up	      Opens a noddy container with bash session
+
+"""
+}
+
+function run(){
+    docker run \
+		--name ${container_name} \
+		-v $(PWD)/src:/var/src \
+		--rm -ti \
+		${container_name}:${container_version} \
+		/bin/bash
+}
+
+if [[ "$COMMAND" == "help" ]] || [[ "$COMMAND" == "usage" ]] || [[ -z "$COMMAND" ]];then
+    usage
+    exit 0
+fi
+
+if [[ "$COMMAND" == "run" ]] || [[ "$COMMAND" == "start" ]] || [[ "$COMMAND" == "up" ]];then
+    run
+    exit 0
+fi
