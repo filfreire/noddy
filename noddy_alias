@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 container_version=latest
-container_name=noddy
+container_name=filfreire/noddy
+container_shortname=noddy
 
 COMMAND="$1"
 
@@ -17,7 +18,7 @@ Action Commands :
 
 function run(){
     docker run \
-		--name ${container_name} \
+		--name ${container_shortname} \
 		-v $(pwd)/src:/var/src \
 		--rm -ti \
 		${container_name}:${container_version} \

@@ -37,6 +37,8 @@ You can use the following tools inside noddy:
 
 This tiny project was done for personal use, and still needs some minor things to be properly finished. Feel free to open an issue or submit a pull-request!
 
+You can run `make build` to build the image locally.
+
 ## Logo
 
 [noddy](https://github.com/filfreire/noddy)'s logo was designed by Inês Freire ([@inestfreire](https://github.com/inestfreire))
