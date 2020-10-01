@@ -36,3 +36,7 @@ You can use the following tools inside noddy:
 ## Contribute
 
 This tiny project was done for personal use, and still needs some minor things to be properly finished. Feel free to open an issue or submit a pull-request!
+
+## Logo
+
+[noddy](https://github.com/filfreire/noddy)'s logo was designed by Inês Freire ([@inestfreire](https://github.com/inestfreire))
