@@ -18,7 +18,7 @@ Action Commands :
 function run(){
     docker run \
 		--name ${container_name} \
-		-v $(PWD)/src:/var/src \
+		-v $(pwd)/src:/var/src \
 		--rm -ti \
 		${container_name}:${container_version} \
 		/bin/bash
