@@ -1,4 +1,4 @@
-<img src="./img/noddy_blue_shirt.png" height="100px">
+<img src="./img/noddy_blue_shirt.png" height="150px">
 
 # noddy
 docker-based wrapper for quick nodejs experiments based on alpine+node image
